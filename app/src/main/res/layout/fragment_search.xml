@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/primaryTextColor"
+        android:text="검색"/>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:weightSum="4">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:hint="원하시는 책을 검색하세요"
+            android:textColorHint="#555555"
+            android:completionThreshold="1"
+            android:layout_weight="4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:textColor="@color/black"
+            android:text="검색"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/search"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

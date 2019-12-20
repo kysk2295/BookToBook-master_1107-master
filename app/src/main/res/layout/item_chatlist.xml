@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/user_1217"
+            android:layout_margin="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고윤서"
+            android:textSize="24dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:textColor="#000000"
+            android:id="@+id/profile_name"
+            android:layout_marginTop="20dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘 ㅁㅎ"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_below="@id/profile_name"
+            android:id="@+id/profile_chat"
+            android:layout_marginTop="2dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:31"
+            android:textSize="18dp"
+            android:id="@+id/profile_time"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_below="@id/profile_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"></View>
+    </RelativeLayout>
+
+
+</LinearLayout>
